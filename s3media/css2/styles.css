@@ -1,0 +1,38 @@
+header{
+    background-color: cadetblue;
+    color: whitesmoke;
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 1px;
+}
+.flex-container{
+    width: 100%;
+    color: aquamarine;
+}
+.flex-container img{
+    width: 100%;
+}
+
+.flex-container h2{
+    font-size: 100%;
+    text-align: justify;
+}
+@media only screen and (min-width:768px)
+{
+    .flex-container{
+        display: flex;
+    }
+   .flex-container div{
+    width: 50%;
+   }
+}
+
+@media only screen and (min-width:1200px)
+{
+    header{
+        display: none;
+    }
+}
+

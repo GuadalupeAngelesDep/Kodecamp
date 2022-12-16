@@ -1,0 +1,152 @@
+body {
+	background-color: black;
+}
+
+#fondo-de-header {
+	/*Imagen de fondo*/
+	background-image: url("/s2html/portada.jpeg");
+	/*posición del fondo*/
+	background-position: center center;
+	/*cover paraq ue el tamaño de la imagen se cubra por completo el contenedor */
+	background-size: auto;
+	/*Para que la imagen no se repita*/
+	background-repeat: no-repeat;
+	/*Espacio al rededor del contenedor */
+	padding: 3%;
+	/*alineacion del texto */
+	text-align: center;
+	/*posicion de la imagen */
+	position: relative;
+}
+
+/*Se cloca un seudo elemento en este caso antes de que este el texto y despues de la imagen poner una capa de color  */
+
+#fondo-de-header:before {
+
+	content: '';
+	position: absolute;
+	/*Me ayudan a determinar los espacios entre el bode del contenedor en esta caso se coloca 0  */
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*Color de la capa del fondo con trasparencia con RGBA   */
+	background-color: rgba(11, 5, 1, 0.463);
+}
+
+#fondo-de-header h1,
+h2 {
+	font-size: 40px;
+	color: #fff;
+	position: relative
+}
+
+li {
+	color: rgba(195, 93, 20, 0.91)
+}
+
+img {
+	width: 50%;
+	height: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.7;
+}
+
+.sub-azul {
+	color: rgb(249, 194, 42)
+}
+
+.flex-container {
+	background-image: url("/s2html/hob.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: aliceblue;
+	font-size: 17px;
+	opacity: 0.7;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.flex-hobbie {
+	background-color: chocolate;
+	opacity: 0.9;
+	width: 30%;
+}
+
+.flex-hobbie img {
+	width: 50%;
+	height: 50%;
+}
+
+.flex-container-2 {
+	background-image: url("/s2html/comida.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: aliceblue;
+	font-size: 17px;
+	opacity: 0.7;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+
+}
+
+.flex-comida {
+
+	background-color: chocolate;
+	width: 20%;
+	margin: 10px;
+	box-shadow: 3px 5px 5px rgba(255, 255, 255, 0.642);
+}
+
+.flex-comida img {
+	width: 50%;
+	height: 50%;
+}
+
+
+@media only screen and (min-width:768px) {
+	#fondo-de-header {
+		background-size: cover;
+	}
+
+	#fondo-de-header h1,
+	h2 {
+		font-size: 60px;
+	}
+
+	.flex-container {
+		font-size: 30px;
+	}
+
+	.flex-hobbie {
+
+		width: 20%;
+	}
+
+	img {
+		width: 50pc;
+		height: 30pc;
+
+	}
+
+	.flex-container-2 {
+		font-size: 20px;
+	}
+
+	.flex-comida {
+		width: 20%;
+		height: 30%;
+	}
+
+	.flex-comida img {
+		width: 50%;
+		height: 30%;
+	}
+}
